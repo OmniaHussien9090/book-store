@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Server is running...");
+  res.send("Backend is working!");
 });
 
 const uri =
@@ -374,3 +374,6 @@ run().catch(console.dir);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+module.exports = app;
